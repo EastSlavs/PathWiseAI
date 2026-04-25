@@ -11,7 +11,7 @@ from openai import OpenAI
 DEFAULT_API_KEY = "sk-your_default_key_here"
 
 # 配置文件存放路径 (C:\Users\用户名\AppData\Roaming\PathWiseAI\config.json)
-APP_DATA_DIR = os.path.join(os.getenv('APPDATA'), '../PathWiseAI')
+APP_DATA_DIR = os.path.abspath(os.path.join(os.getenv('APPDATA'), 'PathWiseAI'))
 CONFIG_FILE = os.path.join(APP_DATA_DIR, 'config.json')
 
 
